@@ -1,5 +1,5 @@
 <?php
-if (isset($_SESSION)){
+if (!isset($_SESSION)){
     header("Location: welcome.php");
 };  
 ?>
@@ -13,6 +13,7 @@ if (isset($_SESSION)){
 </head>
 <body>
     <h2>Login</h2>
+    <h1>jkdsghuasgdf</h1>
     <form action="login.php" method="post">
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" required><br>
